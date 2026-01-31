@@ -1,0 +1,338 @@
+.observationDesk {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/images/backgrounds/desk-background.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* Instrucciones */
+.instructionsOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.5s ease;
+}
+
+.instructionsContent {
+  background: linear-gradient(135deg, #2c1810 0%, #1a1009 100%);
+  border: 2px solid #8b7355;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 500px;
+  color: #f5e6d3;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.instructionsContent h3 {
+  color: #e6c9a8;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.instructionsContent ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.instructionsContent li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.instructionsContent li:before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #d4a574;
+}
+
+.closeInstructions {
+  background: linear-gradient(to bottom, #d4a574, #b8945c);
+  color: #2c1810;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.closeInstructions:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(212, 165, 116, 0.3);
+}
+
+/* Elementos del escritorio */
+.deskElements {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+}
+
+.maskSection {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  z-index: 100;
+}
+
+/* Botón de lupa */
+.magnifyingGlassButton {
+  position: absolute;
+  bottom: 120px;
+  right: 100px;
+  background: rgba(43, 29, 20, 0.8);
+  border: 2px solid #8b7355;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 200;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.magnifyingGlassButton:hover {
+  transform: scale(1.1);
+  background: rgba(59, 40, 28, 0.9);
+  border-color: #d4a574;
+}
+
+.magnifyingGlassIcon {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.magnifyingGlassLabel {
+  font-size: 0.75rem;
+  color: #f5e6d3;
+  font-weight: 500;
+}
+
+/* Elementos del escritorio */
+.deskItems {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  display: flex;
+  gap: 20px;
+  z-index: 50;
+}
+
+.notebook,
+.inkwell,
+.candle {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  background: rgba(43, 29, 20, 0.6);
+  border-radius: 8px;
+  border: 1px solid #5d4a35;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.notebook:hover,
+.inkwell:hover,
+.candle:hover {
+  transform: translateY(-3px);
+  background: rgba(59, 40, 28, 0.8);
+  border-color: #8b7355;
+}
+
+/* Panel de notas */
+.notesPanel {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  width: 250px;
+  background: rgba(28, 19, 13, 0.85);
+  border: 1px solid #5d4a35;
+  border-radius: 8px;
+  padding: 1rem;
+  z-index: 150;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+}
+
+.notesPanel h4 {
+  color: #e6c9a8;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border-bottom: 1px solid #5d4a35;
+  padding-bottom: 0.5rem;
+}
+
+.notesContent {
+  max-height: 200px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.noteItem {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem;
+  background: rgba(91, 62, 43, 0.3);
+  border-radius: 4px;
+  border-left: 3px solid #d4a574;
+}
+
+.noteBullet {
+  color: #d4a574;
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+.noteText {
+  color: #f5e6d3;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.noNotes {
+  color: #a98c6d;
+  font-size: 0.875rem;
+  text-align: center;
+  padding: 1rem;
+  font-style: italic;
+}
+
+/* Información de la máscara */
+.maskInfo {
+  position: absolute;
+  bottom: 50px;
+  right: 200px;
+  width: 300px;
+  background: rgba(28, 19, 13, 0.9);
+  border: 1px solid #5d4a35;
+  border-radius: 8px;
+  padding: 1.5rem;
+  z-index: 150;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+}
+
+.maskInfo h3 {
+  color: #e6c9a8;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  border-bottom: 1px solid #5d4a35;
+  padding-bottom: 0.5rem;
+}
+
+.metadata {
+  margin-bottom: 1.5rem;
+}
+
+.metadataItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed #5d4a35;
+}
+
+.metadataItem strong {
+  color: #d4a574;
+  font-weight: 600;
+}
+
+.metadataItem span {
+  color: #f5e6d3;
+  text-align: right;
+}
+
+/* Barra de progreso */
+.progress {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #5d4a35;
+}
+
+.progressBar {
+  width: 100%;
+  height: 8px;
+  background: #2c1810;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(to right, #d4a574, #b8945c);
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.progressText {
+  color: #a98c6d;
+  font-size: 0.875rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Loading state */
+.loadingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #f5e6d3;
+  font-size: 1.5rem;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Scrollbar personalizado */
+.notesContent::-webkit-scrollbar {
+  width: 6px;
+}
+
+.notesContent::-webkit-scrollbar-track {
+  background: rgba(43, 29, 20, 0.3);
+  border-radius: 3px;
+}
+
+.notesContent::-webkit-scrollbar-thumb {
+  background: #8b7355;
+  border-radius: 3px;
+}
+
+.notesContent::-webkit-scrollbar-thumb:hover {
+  background: #d4a574;
+}

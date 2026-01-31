@@ -1,0 +1,75 @@
+{
+  "maskId": "chiriguano-chane-001",
+  "angles": [
+    {
+      "id": "angle-1",
+      "image": "/assets/images/mask/mask-angle-1.png",
+      "zoomableAreas": [
+        {
+          "id": "seal-001",
+          "x": 150,
+          "y": 80,
+          "width": 100,
+          "height": 40,
+          "detailImage": "/assets/images/mask/details/seal-detail.png",
+          "clue": "Sello oficial: 'Secretaría de Arqueología, Gobierno de la Provincia de Salta'"
+        },
+        {
+          "id": "symbol-001",
+          "x": 200,
+          "y": 150,
+          "width": 60,
+          "height": 60,
+          "detailImage": "/assets/images/mask/details/symbol-1-detail.png",
+          "clue": "Símbolo geométrico: Patrón en espiral que representa el ciclo vital"
+        }
+      ],
+      "visibleDetails": ["Sello oficial", "Patrón base"]
+    },
+    {
+      "id": "angle-2",
+      "image": "/assets/images/mask/mask-angle-2.png",
+      "zoomableAreas": [
+        {
+          "id": "symbol-002",
+          "x": 180,
+          "y": 120,
+          "width": 70,
+          "height": 70,
+          "detailImage": "/assets/images/mask/details/symbol-2-detail.png",
+          "clue": "Símbolo animal: Representación estilizada de un cóndor andino"
+        }
+      ],
+      "visibleDetails": ["Símbolo animal"]
+    },
+    {
+      "id": "angle-3",
+      "image": "/assets/images/mask/mask-angle-3.png",
+      "zoomableAreas": [],
+      "visibleDetails": ["Vista lateral"]
+    },
+    {
+      "id": "angle-4",
+      "image": "/assets/images/mask/mask-angle-4.png",
+      "zoomableAreas": [
+        {
+          "id": "material-001",
+          "x": 220,
+          "y": 180,
+          "width": 80,
+          "height": 50,
+          "detailImage": "/assets/images/mask/details/material-detail.png",
+          "clue": "Textura de la madera: Patrones de crecimiento indican madera de algarrobo"
+        }
+      ],
+      "visibleDetails": ["Textura de madera"]
+    }
+  ],
+  "metadata": {
+    "name": "Máscara Ritual Chiriguano-Chané",
+    "culture": "Chiriguano-Chané",
+    "estimatedAge": "Siglo XVI-XVII",
+    "material": "Madera de algarrobo tallada",
+    "dimensions": "28cm x 22cm x 12cm"
+  }
+}

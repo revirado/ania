@@ -1,0 +1,87 @@
+.game-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.camera-container {
+  width: 300vw;
+  height: 100vh;
+  display: flex;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.camera-container.center {
+  transform: translateX(0);
+}
+
+.camera-container.left {
+  transform: translateX(100vw);
+}
+
+.camera-container.right {
+  transform: translateX(-100vw);
+}
+
+.camera-content {
+  width: 100vw;
+  height: 100vh;
+}
+
+.scene-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/images/backgrounds/main-scene.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.mask-container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mask-image {
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.magnifying-view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+}
+
+.ui-element {
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.ui-element:hover {
+  transform: scale(1.05);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.pulse-animation {
+  animation: pulse 2s infinite;
+}

@@ -1,0 +1,23 @@
+.sceneContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.background {
+  position: absolute;
+  width: 300%;
+  height: 100%;
+  background-image: url('/assets/images/backgrounds/main-scene.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.activeScene {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "salta-001",
+    "query": "salta",
+    "title": "Provincia de Salta, Argentina",
+    "content": "Salta es una provincia del noroeste argentino, conocida por sus paisajes montañosos y su rica historia precolombina. La región fue habitada por diversas tribus indígenas, incluyendo los Chiriguano-Chané, Diaguitas y Lules. La capital, también llamada Salta, es famosa por su arquitectura colonial y su museo de arqueología de alta montaña.",
+    "image": "/assets/images/library/salta-map.jpg",
+    "unlockables": ["Mapa de Salta", "Referencia histórica"]
+  },
+  {
+    "id": "chiriguano-001",
+    "query": "chiriguano",
+    "title": "Pueblo Chiriguano",
+    "content": "Los Chiriguanos fueron un pueblo guerrero que habitó la región del Chaco y las serranías del noroeste argentino. Originarios del Amazonas, migraron hacia el sur alrededor del siglo XV. Eran conocidos por sus habilidades agrícolas y sus constantes conflictos con los Incas y otros pueblos vecinos.",
+    "image": "/assets/images/library/chiriguano-art.jpg",
+    "unlockables": ["Historia Chiriguano", "Patrones culturales"]
+  },
+  {
+    "id": "chane-001",
+    "query": "chane",
+    "title": "Pueblo Chané",
+    "content": "Los Chané eran un pueblo pacífico y agricultor, sometido por los Chiriguanos alrededor del siglo XVI. A pesar de la dominación, mantuvieron muchas de sus tradiciones artísticas, incluyendo la talla de máscaras rituales. Eran expertos en trabajar la madera y crearon complejos sistemas de símbolos para representar conceptos espirituales.",
+    "image": "/assets/images/library/chane-mask.jpg",
+    "unlockables": ["Arte Chané", "Símbolos rituales"]
+  },
+  {
+    "id": "mask-symbols-001",
+    "query": "simbolos mascara",
+    "title": "Símbolos en Máscaras Rituales",
+    "content": "Las máscaras rituales Chiriguano-Chané presentan símbolos que representan elementos de la naturaleza, conceptos espirituales y jerarquías sociales. Los patrones geométricos pueden indicar linaje familiar, mientras que las formas animales representan espíritus protectores. El análisis de estos símbolos requiere conocimiento de la cosmovisión andina.",
+    "unlockables": ["Guía de símbolos", "Significado ritual"]
+  },
+  {
+    "id": "archaeology-001",
+    "query": "secretaria arqueologia",
+    "title": "Secretaría de Arqueología de Salta",
+    "content": "La Secretaría de Arqueología de la Provincia de Salta es la entidad encargada de catalogar, preservar y estudiar los artefactos arqueológicos encontrados en la región. Cada objeto registrado recibe un sello oficial con código de inventario. Los sellos más antiguos datan de 1947, cuando se estableció el primer registro sistemático.",
+    "image": "/assets/images/library/seal-example.jpg",
+    "unlockables": ["Sistema de catalogación", "Procedimientos arqueológicos"]
+  }
+]
