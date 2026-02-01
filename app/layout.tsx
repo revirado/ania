@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AÑA - Investigación Antropológica - GGJ2026",
+  title: "AÑA - Fuego & Sombras - GGJ2026",
   description: "Aña - by Kururu Team - Global Game Jam 2026",
 };
 
