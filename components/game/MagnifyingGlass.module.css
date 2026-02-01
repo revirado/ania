@@ -1,0 +1,198 @@
+.magnifyingOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.3s ease;
+}
+
+.magnifyingHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6rem;
+  padding:1rem 2rem;
+  background: rgba(28, 19, 13, 0.9);
+  border-bottom: 2px solid #8b7355;
+  color: #f5e6d3;
+}
+
+.magnifyingHeader h3 {
+  color: #e6c9a8;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.zoomControls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(43, 29, 20, 0.8);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #5d4a35;
+}
+
+.zoomControls button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #d4a574 0%, #b8945c 100%);
+  border: 2px solid #8b7355;
+  color: #2c1810;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.zoomControls button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #e6c9a8 0%, #d4a574 100%);
+}
+
+.zoomControls span {
+  min-width: 60px;
+  text-align: center;
+  font-weight: 600;
+  color: #f5e6d3;
+}
+
+/* Vista de lupa */
+.magnifyingViewport {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  margin: 1rem;
+  border-radius: 8px;
+  border: 2px solid #5d4a35;
+  cursor: move;
+}
+
+.zoomedView {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-color: #1a1009;
+  transition: background-size 0.3s ease;
+}
+
+/* Marco de lupa */
+.glassFrame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  border: 3px solid rgba(212, 165, 116, 0.8);
+  border-radius: 50%;
+  box-shadow: 
+    0 0 0 1000px rgba(0, 0, 0, 0.7),
+    inset 0 0 20px rgba(212, 165, 116, 0.3);
+  pointer-events: none;
+  z-index: 100;
+}
+
+/* Información del detalle */
+.detailInfo {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: rgba(28, 19, 13, 0.9);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #8b7355;
+  color: #f5e6d3;
+  backdrop-filter: blur(10px);
+  z-index: 200;
+}
+
+.detailInfo h4 {
+  color: #e6c9a8;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.detailInfo p {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.detailInfo small {
+  color: #a98c6d;
+  font-style: italic;
+}
+
+/* Footer */
+.magnifyingFooter {
+  margin-bottom: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(28, 19, 13, 0.9);
+  border-top: 2px solid #8b7355;
+}
+
+.closeButton {
+  background: linear-gradient(to bottom, #d4a574, #b8945c);
+  color: #2c1810;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.closeButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(212, 165, 116, 0.3);
+}
+
+.instructions {
+  color: #a98c6d;
+  font-size: 0.875rem;
+  text-align: right;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .magnifyingHeader {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .glassFrame {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .magnifyingFooter {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .instructions {
+    text-align: center;
+  }
+}

@@ -5,7 +5,7 @@
   background-image: url('/assets/images/backgrounds/desk-background.jpg');
   background-size: cover;
   background-position: center;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* Instrucciones */

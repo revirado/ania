@@ -1,0 +1,158 @@
+.maskContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+}
+
+.maskImageContainer {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.maskImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5));
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.maskImage:hover:not(.maskImage.disabled) {
+  transform: scale(1.02);
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.7));
+}
+
+/* Áreas clickeables para zoom */
+.zoomableArea {
+  position: absolute;
+  border: 2px dashed rgba(212, 165, 116, 0.5);
+  background: rgba(212, 165, 116, 0.1);
+  border-radius: 4px;
+  cursor: zoom-in;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.zoomableArea:hover {
+  background: rgba(212, 165, 116, 0.2);
+  border-color: rgba(212, 165, 116, 0.8);
+  box-shadow: 0 0 15px rgba(212, 165, 116, 0.3);
+}
+
+/* Controles de rotación */
+.rotationControls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background: rgba(43, 29, 20, 0.7);
+  border-radius: 12px;
+  border: 1px solid #5d4a35;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.rotateButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #d4a574 0%, #b8945c 100%);
+  border: 2px solid #8b7355;
+  color: #2c1810;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.rotateButton:hover:not(:disabled) {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #e6c9a8 0%, #d4a574 100%);
+  box-shadow: 0 5px 15px rgba(212, 165, 116, 0.4);
+}
+
+.rotateButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #8b7355;
+}
+
+.angleIndicator {
+  color: #f5e6d3;
+  font-weight: 500;
+  font-size: 1rem;
+  min-width: 150px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  background: rgba(28, 19, 13, 0.5);
+  border-radius: 6px;
+  border: 1px solid #5d4a35;
+}
+
+/* Indicador de detalles */
+.cluesIndicator {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  max-width: 400px;
+  justify-content: center;
+}
+
+.clueTag {
+  background: linear-gradient(135deg, rgba(91, 62, 43, 0.8) 0%, rgba(59, 40, 28, 0.8) 100%);
+  color: #e6c9a8;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  border: 1px solid #8b7355;
+  backdrop-filter: blur(5px);
+}
+
+/* Animaciones */
+.rotating {
+  animation: rotateTransition 0.3s ease;
+}
+
+@keyframes rotateTransition {
+  0% { opacity: 0.5; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .maskImageContainer {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .rotationControls {
+    gap: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+  
+  .rotateButton {
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+  }
+  
+  .angleIndicator {
+    min-width: 120px;
+    font-size: 0.875rem;
+  }
+}

@@ -3,7 +3,7 @@
   "angles": [
     {
       "id": "angle-1",
-      "image": "/assets/images/mask/mask-angle-1.png",
+      "image": "/assets/images/mask/mask-angle-1.jpeg",
       "zoomableAreas": [
         {
           "id": "seal-001",
@@ -28,7 +28,7 @@
     },
     {
       "id": "angle-2",
-      "image": "/assets/images/mask/mask-angle-2.png",
+      "image": "/assets/images/mask/mask-angle-2.jpeg",
       "zoomableAreas": [
         {
           "id": "symbol-002",
@@ -44,13 +44,13 @@
     },
     {
       "id": "angle-3",
-      "image": "/assets/images/mask/mask-angle-3.png",
+      "image": "/assets/images/mask/mask-angle-3.jpeg",
       "zoomableAreas": [],
       "visibleDetails": ["Vista lateral"]
     },
     {
       "id": "angle-4",
-      "image": "/assets/images/mask/mask-angle-4.png",
+      "image": "/assets/images/mask/mask-angle-1.jpeg",
       "zoomableAreas": [
         {
           "id": "material-001",

@@ -36,7 +36,7 @@ export default function UIOverlay({ gameState, onScreenChange }: UIOverlayProps)
       {/* Barra superior */}
       <div className={styles.topBar}>
         <div className={styles.gameTitle}>
-          ANIA - Investigación Antropológica
+          AÑA - Investigación Antropológica
         </div>
         
         <div className={styles.gameStatus}>

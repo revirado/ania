@@ -6,8 +6,8 @@
 
 .background {
   position: absolute;
-  width: 300%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-image: url('/assets/images/backgrounds/main-scene.jpg');
   background-size: contain;
   background-repeat: no-repeat;
