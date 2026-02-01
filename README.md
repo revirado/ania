@@ -1,8 +1,34 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+Global Game Jam ® 26 Jan - 1 Feb 2026
 
-First, run the development server:
+# AÑA: Fuego & Sombras
+
+Resuelve el misterio de un artefacto que está en tus manos. Examina y analiza las pistas del objeto y descubre la historia fascinante detrás de una cultura ancestral, pero ten cuidado, fuerzas ocultas pueden desatarse si te acercas demasiado y sin cautela a la verdad.
+
+##  Sobre el Proyecto
+
+AÑA es un prototipo de videojuego de simulación antropológica desarrollado en Next.js con TypeScript. El jugador asume el rol de un antropólogo investigando una misteriosa máscara ritual de la cultura Chiriguano-Chané, utilizando herramientas de investigación como una lupa, biblioteca especializada y un ambiente inmersivo para desentrañar pistas y descubrir secretos ocultos.
+
+
+### 🎯 Estado del Proyecto
+
+    Versión actual: Prototipo funcional en Next.js 16 + React 19
+
+    Próxima fase: Desarrollo completo en Construct 3
+
+    Publicación final: Será subido a https://revirado.itch.io/
+
+
+### 🧠 Desarrolladores
+
+    Developer: Ariel Lamas
+
+    Game Designer: Gaston Patricio Lamas
+
+
+## Getting Started
+First, run the development server: 
 
 ```bash
 npm run dev
