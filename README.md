@@ -1,10 +1,13 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Global Game Jam ® 26 Jan - 1 Feb 2026
+Global Game Jam ® 26 Jan - 1 Feb 2026  [Salta - Argentina](https://globalgamejam.org/games/2026/ana-2)
+
 
 # AÑA: Fuego & Sombras
 
 Resuelve el misterio de un artefacto que está en tus manos. Examina y analiza las pistas del objeto y descubre la historia fascinante detrás de una cultura ancestral, pero ten cuidado, fuerzas ocultas pueden desatarse si te acercas demasiado y sin cautela a la verdad.
+
+Link: [https://globalgamejam.org/games/2026/ana-2](https://globalgamejam.org/games/2026/ana-2)
 
 ##  Sobre el Proyecto
 
